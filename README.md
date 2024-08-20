@@ -6,8 +6,7 @@ The project uses [H&M RecSys Young Female Data](https://www.kaggle.com/datasets/
 ### Features:
 - Data processing and Feature engineering
 - Collaborative Filtering: basic item-based recommendation, Matrix factorization (SVD)
-- Content-based: user and item features
-- Hybrid approach: user profile with item features
+- Content-based: user and item features, user profile with item features
 
 ### Getting started
 #### Installation
@@ -38,6 +37,6 @@ py scripts/test.py --customer_id <CUSTOMER_ID> --approach <APPROACH> [--n_recs <
   + `'cfmf'`: collaborative filtering using matrix factorization
   + `'cbi`: content-based using item (article) features
   + `'cbu'`: content-based using user (customer) features
-  + `'cbup'`: hybrid approach combine item features and user-item matrix to form user profiles
+  + `'cbup'`: combine item features and user-item matrix to form user profiles
 - [optional] `--n_recs`: number of recommendations (default: 5)
 - [optional] `--display`: display the actual customer_id and their most recent transactions
